@@ -5,4 +5,4 @@ RUN pip install -qr /tmp/requirements.txt
 WORKDIR /opt/webapp/
 COPY app.py ./
 EXPOSE 5000
-ENTRYPOINT ["python3", "app.py"]
+ENTRYPOINT ["python", "app.py"]
