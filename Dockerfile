@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-COPY requirements /tmp/
+COPY requirements.txt /tmp/
 WORKDIR /build
 RUN apt update && apt install -y -q python-all python-pip
 RUN pip install -qr requirements.txt
